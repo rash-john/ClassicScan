@@ -1,0 +1,27 @@
+# Gradle
+.gradle/
+build/
+app/build/
+.kotlin/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# Signing secrets
+*.jks
+*.keystore
+keystore.properties
+
+# Build outputs
+*.apk
+*.aab
+
+# OS
+.DS_Store
+Thumbs.db
+/Android_Document_Scanner_Classic_UI_PRD.md

@@ -1,0 +1,2 @@
+-keep class com.google.mlkit.**.*Registrar { <init>(); }
+-keep class * implements com.google.firebase.components.ComponentRegistrar { <init>(); }

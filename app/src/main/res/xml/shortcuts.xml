@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_scan"
+        android:shortcutId="scan"
+        android:shortcutShortLabel="@string/scan">
+        <intent
+            android:action="com.classicscan.action.SCAN"
+            android:targetClass="com.classicscan.MainActivity"
+            android:targetPackage="com.classicscan" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_import"
+        android:shortcutId="import"
+        android:shortcutShortLabel="@string/import_images">
+        <intent
+            android:action="com.classicscan.action.IMPORT"
+            android:targetClass="com.classicscan.MainActivity"
+            android:targetPackage="com.classicscan" />
+    </shortcut>
+</shortcuts>
