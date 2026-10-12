@@ -25,3 +25,5 @@ keystore.properties
 .DS_Store
 Thumbs.db
 /Android_Document_Scanner_Classic_UI_PRD.md
+/app/release/mapping.txt
+/app/release/output-metadata.json

@@ -11,7 +11,10 @@ val keystoreProperties = Properties().apply {
     rootProject.file("keystore.properties").takeIf { it.exists() }?.inputStream()?.use { load(it) }
 }
 
-base.archivesName = "ClassicScan"
+val appVersionCode = 1
+val appVersionName = "1.0"
+
+base.archivesName = "ClassicScan-v$appVersionName"
 
 android {
     namespace = "com.classicscan"
@@ -23,8 +26,8 @@ android {
         applicationId = "com.classicscan"
         minSdk = 26
         targetSdk = 37
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = appVersionCode
+        versionName = appVersionName
     }
 
     signingConfigs {
