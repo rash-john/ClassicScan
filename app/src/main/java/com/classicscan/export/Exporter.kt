@@ -41,6 +41,8 @@ class Exporter(
         onProgress: (done: Int, total: Int) -> Unit,
     ): List<File> = withContext(Dispatchers.IO) {
         val name = sanitizeFileName(title)
+        dir.listFiles()?.forEach { it.deleteRecursively() }
+        val dir = File(dir, System.currentTimeMillis().toString()).apply { mkdirs() }
         val temps = mutableListOf<File>()
         try {
             val finals = if (format == ExportFormat.PDF) {
